@@ -12,8 +12,8 @@ function App() {
         <Route path='/' element={<Navbar />}>
           <Route index element={<Home />}></Route>
           <Route path='/about' element={<About />}></Route>
-          <Route path='/*' element={<PageNotFound />}></Route>
         </Route>
+        <Route path='/*' element={<PageNotFound />}></Route>
       </Routes>
     </BrowserRouter>
   );
