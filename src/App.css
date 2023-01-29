@@ -7,14 +7,26 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 1.6rem;
+  background-color: #DEF6E5;
+  color: #263238;
+}
+
+.loading-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar{
-  border: 1px solid teal;
   margin: 1rem;
+  border-bottom: 1px solid teal;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+}
+
+.navbar > .logo-name > h1 > a{
+  text-decoration: none;
 }
 
 .navbar > .pages{
@@ -28,10 +40,9 @@
 
 .navbar > .pages > li > a{
   text-decoration: none;
-  color: darkcyan;
-
 }
 
+/* 404 - Error Page */
 .container-404 {
   height: 100vh;
   display: flex;
@@ -41,12 +52,31 @@
   align-items: center;
 }
 
+/* Home Page */
+.home-container{
+  border: 1px solid teal;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.left-home{
+  border: 1px solid teal;
+  height: 50rem;
+  width: 50rem;
+  /* margin: 0 auto; */
+}
+
+.right-home{
+  border: 1px solid teal;
+}
 
 /* For Mobiles */
 @media (max-width: 600px) {
   
   /* 404 - Page */
-  .container-404 > img{
+  .container-404 > img, .loading-container > img{
     /* border: 1px solid red; */
     /* height: 50rem; */
     width: 70vw;
