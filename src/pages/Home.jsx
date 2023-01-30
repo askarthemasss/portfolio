@@ -6,16 +6,16 @@ import { useEffect, useState } from "react"
 
 const Home = () => {
     // Two Gifs, one for entrance animation, another on for floating animation
-    // while loading, entrance animation image will be loaded
+    // at first, entrance animation gif will be loaded
     const [image, setImage] = useState(codeTypingEntrance)
     // const [loading, setLoading] = useState(true)
 
     useEffect(()=> {
         // setLoading(false)
-        // After 1 sec change the image to looping animation
+        // After 0.7 sec change the gif to floating animation
         setTimeout(()=>{
             setImage(codeTypingLooping);
-        },1000)
+        },700)
     },[])
 
     // if (loading) {
@@ -27,7 +27,14 @@ const Home = () => {
                 {/* <h1>Home Page</h1> */}
                 <div className="left-home">
                     <h3>Hi, I'm Askar</h3>
-                    <p>Frontend Developer | Low-Code</p>
+                    {/* <p>Frontend Developer | Low-Code</p> */}
+                    <p>Professional Software developer with more than a year of experience in: </p>
+                    <ul>
+                        <li>Developing Frontend</li>
+                        <li>Customizing and Implementing SaaS Products</li>
+                        <li>Low-Code Development</li>
+                    </ul>
+                    <a  className="about-me-button" href="/about"><span>About Me</span></a>
                 </div>
                 <div className="right-home">
                     <img src={image} alt="code-typing-illustration" />

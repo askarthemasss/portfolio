@@ -17,6 +17,7 @@
   justify-content: center;
 }
 
+/* Navbar */
 .navbar{
   margin: 1rem;
   border-bottom: 1px solid teal;
@@ -42,6 +43,10 @@
   text-decoration: none;
 }
 
+.navbar > .pages > li > a:hover{
+  /* border-top: #263238; */
+}
+
 /* 404 - Error Page */
 .container-404 {
   height: 100vh;
@@ -54,7 +59,7 @@
 
 /* Home Page */
 .home-container{
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -62,14 +67,32 @@
 }
 
 .left-home{
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
   height: 50rem;
-  width: 50rem;
-  /* margin: 0 auto; */
+  /* width: 50rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 1rem;
+  gap: 1rem;
+}
+
+.left-home > ul > li {
+  list-style: square;
+  margin-left: 3rem;
+}
+
+.about-me-button{
+  border: 1px solid teal;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
 }
 
 .right-home{
-  border: 1px solid teal;
+  /* border: 1px solid teal; */
 }
 
 /* For Mobiles */
