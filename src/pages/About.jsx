@@ -1,7 +1,10 @@
+import SocialLinks from "./SocialLinks";
+
 const About = () => {
     return ( 
         <div className="about-me">
             <h1>I'm Askar</h1>
+            <SocialLinks />
             <ul>
                 <li>Add Resume view/Download Link</li>
                 <li>Add Social Links</li>
