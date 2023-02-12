@@ -2,6 +2,7 @@
 import codeTypingEntrance from "../images/Code-typing-entrance.gif"
 import codeTypingLooping from "../images/Code-typing-looping.gif"
 import { useEffect, useState } from "react"
+import SocialLinks from "./SocialLinks"
 // import Loading from "./Loading"
 
 const Home = () => {
@@ -35,11 +36,11 @@ const Home = () => {
                         <li>Low-Code Development</li>
                     </ul>
                     <a  className="about-me-button" href="/about"><span>About Me</span></a>
+                    <SocialLinks gap={"5rem"} />
                 </div>
                 <div className="right-home">
                     <img src={image} alt="code-typing-illustration" />
                 </div>
-                <div className="animated-gif"></div>
             </div>
             <a href="https://storyset.com/work" target="_blank" rel="noreferrer">Work illustrations by Storyset</a>
         </>

@@ -95,6 +95,19 @@
   /* border: 1px solid teal; */
 }
 
+.about-me{
+  margin: 2rem;
+}
+
+.profile-image{
+  width: 35rem;
+  border-radius: 25rem;
+  padding: 2rem;
+  border: 1px solid teal;
+  float: right;
+  margin-right: 10rem;
+  }
+
 /* For Mobiles */
 @media (max-width: 600px) {
 
