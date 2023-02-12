@@ -9,6 +9,7 @@
   font-size: 1.6rem;
   background-color: #DEF6E5;
   color: #263238;
+  /* outline: 1px solid red; */
 }
 
 .loading-container{
@@ -95,17 +96,25 @@
   /* border: 1px solid teal; */
 }
 
-.about-me{
+.about-me-main{
   margin: 2rem;
+  display: flex;
+
+}
+
+.about-me-bio{
+  text-align: justify;
+  margin: 2rem 0;
 }
 
 .profile-image{
   width: 35rem;
-  border-radius: 25rem;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   padding: 2rem;
   border: 1px solid teal;
   float: right;
-  margin-right: 10rem;
+  margin: 5rem 10rem;
   }
 
 /* For Mobiles */
