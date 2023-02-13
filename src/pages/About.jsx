@@ -1,6 +1,8 @@
 import SocialLinks from "./SocialLinks";
 import Resume from "../documents/Resume.pdf"
 import Image from "../documents/askar-profile.jpeg"
+import { FaCss3Alt, FaHtml5, FaJava, FaNodeJs, FaReact } from "react-icons/fa";
+import { SiJavascript, SiMysql, SiSpring, SiSpringboot } from "react-icons/si";
 
 const About = () => {
     return ( 
@@ -18,7 +20,20 @@ const About = () => {
                         <br /><br />
                         ‣ View My <a href={Resume}>Resume</a>.
                     </p>
-                    <SocialLinks gap={"3rem"} />
+                    <div className="tech-stack">
+                        <p>‣ Tech I'm currently using:</p><br />
+                        <ul>
+                            <li title="HTML"><FaHtml5 size={25}/></li>
+                            <li title="CSS"><FaCss3Alt size={25}/></li>
+                            <li title="JavaScript"><SiJavascript size={25}/></li>
+                            <li title="React.js"><FaReact size={25}/></li>
+                            <li title="node.js"><FaNodeJs size={25}/></li>
+                            <li title="Java"><FaJava size={25}/></li>
+                            <li title="Spring"><SiSpring size={25}/></li>
+                            <li title="Spring Boot"><SiSpringboot size={25}/></li>
+                            <li title="MySQL"><SiMysql size={25}/></li>
+                        </ul>
+                    </div>
                     <br /><br />
                     <ul>
                         <li>Add services - zoho, low-code, Frontend,...</li>
@@ -31,7 +46,7 @@ const About = () => {
                 </div>
             </div>
             <div className="about-me-footer">
-                
+                <SocialLinks gap={"3rem"} />
             </div>
         </>
      );

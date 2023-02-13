@@ -96,10 +96,17 @@
   /* border: 1px solid teal; */
 }
 
+/* About Me Page */
 .about-me-main{
   margin: 2rem;
   display: flex;
 
+}
+
+.tech-stack > ul > li{
+  list-style-type: none;
+  display: inline;
+  margin-left: 2rem;
 }
 
 .about-me-bio{
